@@ -1,0 +1,30 @@
+﻿<Window x:Class="Exam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exam"
+        mc:Ignorable="d"
+        Title="Калькулятор экзаменационных баллов" Height="383" Width="402">
+    <Grid Height="355" VerticalAlignment="Top">
+        <TextBlock Text="Модуль 1: Разработка, администрирование и защита баз данных" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox x:Name="Module1Score" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0" Width="100"/>
+        <TextBlock Text="(Макс. 22 балла)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,40,0,0"/>
+
+        <TextBlock Text="Модуль 2: Разработка модулей программного обеспечения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0"/>
+        <TextBox x:Name="Module2Score" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,110,0,0" Width="100"/>
+        <TextBlock Text="(Макс. 38 баллов)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,110,0,0"/>
+
+        <TextBlock Text="Модуль 3: Сопровождение и обслуживание ПО" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,150,0,0"/>
+        <TextBox x:Name="Module3Score" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,180,0,0" Width="100"/>
+        <TextBlock Text="(Макс. 20 баллов)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,180,0,0"/>
+
+        <Button Content="Подсчитать" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,220,0,0" Width="100" Click="CalculateButton_Click"/>
+
+        <TextBlock Text="Общая сумма баллов:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,260,0,0"/>
+        <TextBlock x:Name="TotalScore" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,280,0,0"/>
+
+        <TextBlock Text="Оценка:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,300,0,0"/>
+        <TextBlock x:Name="Grade" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,320,0,0"/>
+    </Grid>
+</Window>
